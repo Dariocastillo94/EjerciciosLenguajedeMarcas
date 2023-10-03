@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Videoclub SYSTEM "prueba.dtd">
+<Videoclub nombre=LUKAT telefono=957957957 direccion=lucena>
+    <peliculas>
+        <pelicula>
+            <nombre>Matrix</nombre>
+            <genero>sci-fi</genero>
+            <disponible/>
+        </pelicula>
+        <pelicula>
+            <nombre>Matrix reload</nombre>
+            <genero>sci-fi</genero>
+            <no_disponible/>
+        </pelicula>
+        <pelicula>
+            <nombre>Shrek-2</nombre>
+            <genero>Animacion</genero>
+            <no_disponible/>
+        </pelicula>
+    
+    </peliculas>
+    <videojuegos>
+        <videojuego>
+            <nombre>Sekiro</nombre>
+            <genero>aventura</genero>
+            <disponible/>
+        </videojuego>
+        <videojuego>
+            <nombre>GTA-V</nombre>
+            <genero>aventura</genero>
+            <disponible/>
+        </videojuego>
+        <videojuego>
+            <nombre>Blasphemous2</nombre>
+            <genero>metroidvania</genero>
+            <disponible/>
+        </videojuego>
+
+    </videojuegos>
+    <ofertas>
+        <oferta>pelicula-pelicula</oferta>
+    </ofertas>
+    <ofertas>
+        <oferta>pelicula-videojuego</oferta>
+    </ofertas>
+
+</Videoclub>

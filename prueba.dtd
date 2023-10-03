@@ -1,0 +1,15 @@
+<!ELEMENT Videoclub (peliculas,videojuegos,ofertas)>
+<!ELEMENT peliculas  (pelicula+)>
+<!ELEMENT videojuegos (videojuego)*>
+<!ELEMENT ofertas (oferta)*>
+<!ELEMENT pelicula (nombre, genero,(disponible|no_disponible))>
+<!ELEMENT videojuego (nombre, genero,(disponible|No_disponible))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT disponible EMPTY>
+<!ELEMENT no_disponible EMPTY>
+<!ELEMENT oferta (#PCDATA)>
+<!ATTLIST Videoclub nombre CDATA #IMPLIED
+                    telefono CDATA #FIXED "957957957"
+                    direccion CDATA #REQUIRED>
+<!ENTITY % AtbCoste "coste PCDATA #IMPLIED">
