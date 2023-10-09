@@ -12,4 +12,5 @@
 <!ATTLIST Videoclub nombre CDATA #IMPLIED
                     telefono CDATA #FIXED "957957957"
                     direccion CDATA #REQUIRED>
-<!ENTITY % AtbCoste "coste PCDATA #IMPLIED">
+<!ATTLIST peliculas coste CDATA #IMPLIED>
+<!ATTLIST videojuegos coste CDATA #IMPLIED>
