@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE registroMedicos SYSTEM "Examen.dtd">
+<registroMedicos premiun="Pac Mar">
+    <registro>
+        <paciente nombre="Antonio" codigo="Pac" altura="1,78" peso="77kg" apellidos="Castro Mora" codigoFamiliaridad="Mar">
+            <diagnostico>arrítmias</diagnostico>
+            <tratamiento>tratamiento intravenoso y en observación</tratamiento>
+            <fecha>10/06/2023</fecha>
+            <vivo />
+        </paciente>
+        <paciente nombre="Marta" codigo="Mar" altura="1,60" peso="60kg" apellidos="Dorado Espinoza" codigoFamiliaridad="Pac">
+            <diagnostico>traumatismos craneoencefálico</diagnostico>
+            <tratamiento>anticoagulantes</tratamiento>
+            <fecha>10/06/2023</fecha>
+            <vivo />
+        </paciente>
+        <medico nombre="Alfonso" experiencia="10 años" apellidos="De la Cruz Campo">
+            <especialidad>Cardiólogo y neurologo&UGR;</especialidad>
+        </medico>
+    </registro>
+    <hospital ciudad="Córdoba">Reina sofía</hospital>
+    <observaciones>Progresa según lo esperado</observaciones>
+</registroMedicos>

@@ -1,0 +1,26 @@
+<!ELEMENT registroMedicos (registro,hospital,observaciones)>
+<!ELEMENT hospital (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT registro (paciente | medico)*>
+<!ELEMENT paciente (diagnostico,tratamiento,fecha?,(vivo|muerto))>
+<!ELEMENT diagnostico (#PCDATA)>
+<!ELEMENT tratamiento (#PCDATA)>
+<!ELEMENT fecha (#PCDATA|fechaSalida)*>
+<!ELEMENT fechaSalida (#PCDATA)>
+<!ELEMENT  vivo EMPTY>
+<!ELEMENT  muerto EMPTY>
+<!ELEMENT medico (especialidad)>
+<!ELEMENT especialidad (#PCDATA)>
+<!ATTLIST registroMedicos premiun  IDREFS #REQUIRED>
+<!ATTLIST paciente codigo ID #REQUIRED
+                    nombre CDATA #REQUIRED
+                    apellidos CDATA #REQUIRED
+                    altura CDATA #IMPLIED
+                    peso CDATA #IMPLIED
+                    codigoFamiliaridad IDREF #IMPLIED>
+<!ATTLIST medico nombre CDATA #REQUIRED
+                apellidos CDATA #REQUIRED
+                    experiencia CDATA #FIXED "10 años">  
+<!ENTITY UGR "Doctorado en la Universidad de Granada">
+<!ENTITY % atributoLocalizacion "ciudad CDATA #REQUIRED">
+<!ATTLIST hospital %atributoLocalizacion;>                
